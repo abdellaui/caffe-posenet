@@ -1,5 +1,16 @@
+#!/usr/bin/env sh
+
+conda create -n caffe-posenet python==2.7
+conda activate caffe-posenet
+pip install -r python/requirements.txt
+pip install lmdb
+pip install opencv-python
+pip install pydot
+
 sudo apt-get update
 sudo apt-get upgrade
+
+sudo apt-get install graphviz
 
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 sudo apt-get install --no-install-recommends libboost-all-dev
