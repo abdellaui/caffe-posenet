@@ -10,9 +10,9 @@ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 
 echo "\n# caffe-posenet preinstall.sh" >> ~/.bashrc
-echo "export CAFFE_ROOT=$(pwd)" >> ~/.bashrc
+echo "export CAFFE_POSENET_ROOT=$(pwd)" >> ~/.bashrc
 echo "export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:/usr/local/cuda/lib64" >> ~/.bashrc
-echo "export PYTHONPATH=\$CAFFE_ROOT/python:\$PYTHONPATH" >> ~/.bashrc
+echo "export PYTHONPATH=\$CAFFE_POSENET_ROOT/python:\$PYTHONPATH" >> ~/.bashrc
 echo "# end caffe-posenet preinstall.sh\n" >> ~/.bashrc
 
 source ~/.bashrc
