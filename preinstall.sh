@@ -11,8 +11,7 @@
 #sudo apt-get update
 #sudo apt-get upgrade
 #sudo apt-get install graphviz
-
-#conda install -c menpo opencv3 
+#conda install -c menpo opencv3
 #sudo apt-get install libopencv-dev
 
 #sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
@@ -31,8 +30,8 @@ echo "# end caffe-posenet preinstall.sh\n" >> ~/.bashrc
 # PLEASE: restart command prompt
 # dont forget: conda activate caffe-posenet
 
-# make all
-# make test
-# make runtest
-# make pycaffe
-# make pytest
+# make all -j 8
+# make test -j 8
+# make runtest -j 8
+# make pycaffe -j 8
+# make pytest -j 8
