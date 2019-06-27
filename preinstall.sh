@@ -10,8 +10,10 @@
 
 #sudo apt-get update
 #sudo apt-get upgrade
-
 #sudo apt-get install graphviz
+
+#conda install -c menpo opencv3 
+#sudo apt-get install libopencv-dev
 
 #sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 #sudo apt-get install --no-install-recommends libboost-all-dev
@@ -26,3 +28,11 @@ echo "export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:/usr/local/cuda/lib64" >> ~/.bash
 echo "export PYTHONPATH=\$CAFFE_POSENET_ROOT/python:\$PYTHONPATH" >> ~/.bashrc
 echo "# end caffe-posenet preinstall.sh\n" >> ~/.bashrc
 
+# PLEASE: restart command prompt
+# dont forget: conda activate caffe-posenet
+
+# make all
+# make test
+# make runtest
+# make pycaffe
+# make pytest
